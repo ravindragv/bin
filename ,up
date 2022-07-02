@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for (( i=0; i < $1; i++ )); do
+	path+=../
+done
+cd "$path"
+
+exec bash
